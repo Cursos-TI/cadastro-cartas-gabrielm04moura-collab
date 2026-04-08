@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Tema 2 - Calculando Densidade Populacional e PIB per Capita
+// Objetivo: Neste nível, você implementará a lógica para calcular e exibir duas novas propriedades importantes para cada cidade: a densidade populacional e o PIB per capita. 
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-    char estado[8];
+  char estado[8];
     char codigo[4];
     char nomeCidade[50];
     int populacao;
     float area;
     float pib;
     int pontosTuristicos;
+    float densidade;
+    float pibPerCapita;
   // Área para entrada de dados
     printf("Digite o estado: ");
     scanf("%s", estado);
@@ -29,6 +31,8 @@ int main() {
     printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos);
   // Área para exibição dos dados da cidade
+   densidade = populacao / area;
+    pibPerCapita = pib / populacao;
     printf("\nDados da Cidade:\n");
     printf("Estado: %s\n", estado);
     printf("Codigo: %s\n", codigo);
@@ -37,6 +41,9 @@ int main() {
     printf("Area: %.2f km²\n", area);
     printf("PIB: R$ %.2f\n", pib);
     printf("Pontos Turisticos: %d\n", pontosTuristicos);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade);
+    printf("PIB per Capita: R$ %.2f\n", pibPerCapita);
+
 
 return 0;
 } 
