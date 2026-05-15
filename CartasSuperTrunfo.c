@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 // Desafio Super Trunfo - Países
-// Tema 2 - Calculando Densidade Populacional e PIB per Capita
-// Objetivo: Neste nível, você implementará a lógica para calcular e exibir duas novas propriedades importantes para cada cidade: a densidade populacional e o PIB per capita. 
+// Tema 3 - Super Trunfo em c: Desenvolvendo a Lógica do Jogo
 
 int main() {
     // Variáveis da Carta 1
